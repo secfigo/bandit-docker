@@ -11,7 +11,7 @@ RUN echo "**** install runtime packages ****"      && \
     echo "**** install pip packages ****"          && \
     pip install --no-cache-dir -U pip              && \
     pip install --no-cache-dir -U bandit           && \
-    echo "**** clean up ****"                      && \
+    echo "**** create volumes ****"                && \
     mkdir -p /src                                  && \
     mkdir -p /report                               && \
     mkdir -p /bandit                               && \
